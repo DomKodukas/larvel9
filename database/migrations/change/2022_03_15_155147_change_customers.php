@@ -30,7 +30,7 @@ return new class extends Migration
     {
         Schema::table('customers', function (Blueprint $table) {
             $table->integer('el_pastas');
-            $table->renameColumn('asmens_pavadinimas', 'asmens_prierasas');
+            $table->renameColumn('asmens_pavadinimas', 'asmens_prierasas');//PERVADINO
             $table->dropColumn('asmens_mokestis');
     
         });
